@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Section from './Section';
 
+const founderImage = `${import.meta.env.BASE_URL}founder.jpeg`;
+
 function Founder() {
   const [imageError, setImageError] = useState(false);
 
@@ -12,13 +14,13 @@ function Founder() {
       intro="Meet the founder and president of All for the Gospel Sake Family, a young leader whose hunger for God's Word gave birth to a family of faith."
     >
       <div className="founder-panel reveal">
-        {/* Add the founder image as /public/founder.jpg to display it here. */}
+        {/* Add the founder image as /public/founder.jpeg to display it here. */}
         <div className="founder-portrait">
           <div className="portrait-ring" />
           {!imageError ? (
             <img
               className="founder-photo"
-              src="/founder.jpeg"
+              src={founderImage}
               alt="Odia Winner ministering on stage"
               onError={() => setImageError(true)}
             />
