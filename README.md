@@ -49,6 +49,20 @@ npm run dev
 npm run build
 ```
 
+## Deploy to GitHub Pages
+
+The project is configured for GitHub Pages deployment at:
+
+`https://okiblessing.github.io/All-for-the-gospel-sake-family/`
+
+After pushing to the `main` branch, GitHub Actions will build and deploy the site automatically.
+
+If GitHub Pages is not live yet:
+
+1. Open your GitHub repository.
+2. Go to `Settings > Pages`.
+3. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+
 ## Editing Content
 
 - Update section text in [src/App.jsx](/Users/macbook/test project/src/App.jsx) and the files inside [src/components](/Users/macbook/test project/src/components).
